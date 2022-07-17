@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="main.js"></script>
+    <link
+      rel="shortcut icon"
+      href="img/favicon/instagram_favicon.jpg"
+      type="image/x-icon"
+    />
+    <title>Instagram</title>
+  </head>
+  <body>
+    <header>
+      <div class="instagram-logo">
+        <img src="img/pfp/instagram.png" alt="" />
+        <span id="expandnav" class="material-symbols-outlined">
+          expand_more
+        </span>
+      </div>
+      <div class="searchbar">
+        <span id="search" class="material-symbols-outlined"> search </span>
+        <input class="headersearch" placeholder="Search" type="text" />
+        <div class="searchpopup">
+          <div class="searchpopup-layer">
+            <div class="spheader">
+              <span> Recent </span>
+              <span class="cleartxt"> Clear all </span>
+            </div>
+            <div class="spprofilecard">
+              <img src="img/pfp/mcdonalds_in_pfp.jpg" alt="" />
+              <div class="spidstatus">
+                <span class="spuserid">mcdonalds_india</span>
+                <span class="spstatus">McDonald's India &middot Follow</span>
+              </div>
+              <span id="cross" class="material-symbols-outlined"> add </span>
+            </div>
+            <div class="spprofilecard">
+              <img src="img/pfp/ksi_pfp.jpg" alt="" />
+              <div class="spidstatus">
+                <span class="spuserid">ksi</span>
+                <span class="spstatus">JJ Olatunji &middot Following</span>
+              </div>
+              <span id="cross" class="material-symbols-outlined"> add </span>
+            </div>
+            <div class="spprofilecard">
+              <img src="img/pfp/olisunvia_pfp.jpg" alt="" />
+              <div class="spidstatus">
+                <span class="spuserid">olisunvia</span>
+                <span class="spstatus">Olivia &middot Following</span>
+              </div>
+              <span id="cross" class="material-symbols-outlined"> add </span>
+            </div>
+            <div class="spprofilecard">
+              <img src="img/pfp/madelame_pfp.jpg" alt="" />
+              <div class="spidstatus">
+                <span class="spuserid">madelame</span>
+                <span class="spstatus">Madelame Petch &middot Following</span>
+              </div>
+              <span id="cross" class="material-symbols-outlined"> add </span>
+            </div>
+            <div class="spprofilecard">
+              <img src="img/pfp/thv_pfp.jpg" alt="" />
+              <div class="spidstatus">
+                <span class="spuserid">thv</span>
+                <span class="spstatus">Taehyung &middot Following</span>
+              </div>
+              <span id="cross" class="material-symbols-outlined"> add </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <button id="gnav" class="material-symbols-outlined navs">search</button>
+        <button id="anav" class="material-symbols-outlined navs">home</button>
+        <button id="bnav" class="material-symbols-outlined navs">
+          maps_ugc
+          <div class="icon-layer"></div>
+          <span>9+</span>
+        </button>
+        <button id="cnav" class="material-symbols-outlined navs">
+          add_circle
+        </button>
+        <button id="dnav" class="material-symbols-outlined navs">
+          explore
+        </button>
+        <button id="enav" class="material-symbols-outlined navs">
+          favorite
+        </button>
+        <div id="fnav" class="pfp">
+          <img src="img/pfp/my_account_pfp.jpg" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content">
+        <div class="stories">
+          <div id="fsimage" class="images">
+            <div class="canvas"></div>
+            <div class="canvas-layer"></div>
+            <img src="img/pfp/apple_pfp.jpg" alt="" />
+            <span class="storyuserid">apple</span>
+          </div>
+          <div class="images">
+            <div class="canvas"></div>
+            <div class="canvas-layer"></div>
+            <img src="img/pfp/pubity_pfp.jpg" alt="" />
+            <span class="storyuserid">pubity</span>
+          </div>
+          <div class="images">
+            <div class="canvas"></div>
+            <div class="canvas-layer"></div>
+            <img src="img/pfp/9gag_pfp.jpg" alt="" />
+            <span class="storyuserid">9gag</span>
+          </div>
+          <div class="images">
+            <div class="canvas"></div>
+            <div class="canvas-layer"></div>
+            <img src="img/pfp/vox_pfp.jpg" alt="" />
+            <span class="storyuserid">voxdotcom</span>
+          </div>
+          <div class="images">
+            <div class="canvas"></div>
+            <div class="canvas-layer"></div>
+            <img src="img/pfp/spotify_pfp.jpg" alt="" />
+            <span class="storyuserid">spotify</span>
+          </div>
+          <div class="images">
+            <div class="canvas"></div>
+            <div class="canvas-layer"></div>
+            <img src="img/pfp/starbucks_pfp.jpg" alt="" />
+            <span class="storyuserid">starbucks</span>
+          </div>
+          <div class="images">
+            <div class="canvas"></div>
+            <div class="canvas-layer"></div>
+            <img src="img/pfp/netflix_pfp.jpg" alt="" />
+            <span class="storyuserid">netflix</span>
+          </div>
+          <div class="images">
+            <div class="canvas"></div>
+            <div class="canvas-layer"></div>
+            <img src="img/pfp/ny_times_pfp.jpg" alt="" />
+            <span class="storyuserid">nytimes</span>
+          </div>
+          <div class="images">
+            <div class="canvas"></div>
+            <div class="canvas-layer"></div>
+            <img src="img/pfp/nfl_pfp.jpg" alt="" />
+            <span class="storyuserid">nfl</span>
+          </div>
+        </div>
+
+        <!-- 1st Post | FCB -->
+
+        <div class="posts">
+          <div class="postsheader">
+            <div class="postspfp">
+              <div class="tipcard">
+                <div class="theader">
+                  <div class="timage">
+                    <img src="img/pfp/fcb_pfp.jpg" alt="" />
+                    <div class="tcanvas"></div>
+                  </div>
+                  <div class="tprofiledetails">
+                    <span class="tuserid">
+                      fcbarcelona
+                      <img
+                        class="verified"
+                        src="img/favicon/verified.png"
+                        alt=""
+                      />
+                    </span>
+                    <span class="tbio"> Sports Team </span>
+                    <span class="tmutuality">
+                      Followed by <span>apple</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="profilestats">
+                  <div class="pstats">
+                    <span class="tcount"> 16.7K </span>
+                    <span class="ttext"> posts </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 110M </span>
+                    <span class="ttext"> followers </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 78 </span>
+                    <span class="ttext"> following </span>
+                  </div>
+                </div>
+                <div class="profileposts">
+                  <img class="pposts" src="img/posts/fcb_post.jpg" alt="" />
+                  <img class="pposts" src="img/posts/fcb1_post.jpg" alt="" />
+                  <img class="pposts" src="img/posts/fcb2_post.jpg" alt="" />
+                </div>
+                <div class="tprofilefooter">
+                  <span> Message </span>
+                  <span> Following </span>
+                </div>
+              </div>
+              <div class="canvas"></div>
+              <div class="canvas-layer"></div>
+              <img class="postspfpimg" src="img/pfp/fcb_pfp.jpg" alt="" />
+              <span class="postsuserid">fcbarcelona</span>
+              <img class="verified" src="img/favicon/verified.png" alt="" />
+            </div>
+            <span id="vert" class="material-symbols-outlined"> more_vert </span>
+          </div>
+          <div class="postimage">
+            <img src="img/posts/fcb_post.jpg" alt="" />
+          </div>
+          <div class="postsfooter">
+            <div class="actions">
+              <span id="aac" class="material-symbols-outlined factions">
+                favorite
+              </span>
+              <span id="bac" class="material-symbols-outlined factions">
+                maps_ugc
+                <div class="icon-layer"></div>
+              </span>
+              <span id="cac" class="material-symbols-outlined factions">
+                share
+              </span>
+              <span id="dac" class="material-symbols-sharp"> bookmark </span>
+            </div>
+            <span class="likes">2,972,400 likes</span>
+            <span class="postsdescrp"
+              ><span>fcbarcelona</span>We out here NYC!<br />Spotify X
+              Barça</span
+            >
+            <span class="commentscount">View all 10k comments</span>
+            <span class="posttime">2 DAYS AGO</span>
+            <div class="commentbox">
+              <span id="mood" class="material-symbols-outlined"> mood </span>
+              <input
+                class="writecomment"
+                type="text"
+                placeholder="Add a comment.."
+              />
+              <span class="postcomment">Post</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd Post | Apple -->
+
+        <div class="posts">
+          <div class="postsheader">
+            <div class="postspfp">
+              <div class="tipcard">
+                <div class="theader">
+                  <div class="timage">
+                    <img src="img/pfp/apple_pfp.jpg" alt="" />
+                    <div class="tcanvas"></div>
+                  </div>
+                  <div class="tprofiledetails">
+                    <span class="tuserid">
+                      apple
+                      <img
+                        class="verified"
+                        src="img/favicon/verified.png"
+                        alt=""
+                      />
+                    </span>
+                    <span class="tbio"> Technology & Media </span>
+                    <span class="tmutuality">
+                      Followed by <span>nasa</span> and <span>kfc</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="profilestats">
+                  <div class="pstats">
+                    <span class="tcount"> 1,050 </span>
+                    <span class="ttext"> posts </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 27.8M </span>
+                    <span class="ttext"> followers </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 9 </span>
+                    <span class="ttext"> following </span>
+                  </div>
+                </div>
+                <div class="profileposts">
+                  <img class="pposts" src="img/posts/apple_post.jpg" alt="" />
+                  <img class="pposts" src="img/posts/apple1_post.jpg" alt="" />
+                  <img class="pposts" src="img/posts/apple2_post.jpg" alt="" />
+                </div>
+                <div class="tprofilefooter">
+                  <span> Message </span>
+                  <span> Following </span>
+                </div>
+              </div>
+              <div class="canvas"></div>
+              <div class="canvas-layer"></div>
+              <img class="postspfpimg" src="img/pfp/apple_pfp.jpg" alt="" />
+              <span class="postsuserid">apple</span>
+              <img class="verified" src="img/favicon/verified.png" alt="" />
+            </div>
+            <span id="vert" class="material-symbols-outlined"> more_vert </span>
+          </div>
+          <div class="postimage">
+            <img src="img/posts/apple_post.jpg" alt="" />
+          </div>
+          <div class="postsfooter">
+            <div class="actions">
+              <span id="aac" class="material-symbols-outlined factions">
+                favorite
+              </span>
+              <span id="bac" class="material-symbols-outlined factions">
+                maps_ugc
+                <div class="icon-layer"></div>
+              </span>
+              <span id="cac" class="material-symbols-outlined factions">
+                share
+              </span>
+              <span id="dac" class="material-symbols-sharp"> bookmark </span>
+            </div>
+            <span class="likes">3,000,230 likes</span>
+            <span class="postsdescrp"
+              ><span>apple</span>Great Shots are worth waiting for...<br />iphone
+              13 pro night photography!!!</span
+            >
+            <span class="commentscount">View all 40k comments</span>
+            <span class="posttime">1 DAY AGO</span>
+            <div class="commentbox">
+              <span id="mood" class="material-symbols-outlined"> mood </span>
+              <input
+                class="writecomment"
+                type="text"
+                placeholder="Add a comment.."
+              />
+              <span class="postcomment">Post</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Suggestions -->
+
+        <section id="profileinfo-mobile" class="profileinfo">
+          <div class="suggestions-mobile">
+            <span>Suggestions for you</span>
+            <span>See All</span>
+          </div>
+          <div class="profileinfo-wrapper">
+            <div class="profileinfo-layer">
+              <div class="suggestions-desktop">
+                <span>Suggestions for you</span>
+                <span>See All</span>
+              </div>
+              <div id="profile1" class="usersprofile">
+                <img src="img/pfp/tastemade_pfp.jpg" alt="" />
+                <div class="useridname">
+                  <span class="userid2">tastemade</span>
+                  <span class="mutuality">Suggested for you</span>
+                </div>
+                <span class="follow">Follow</span>
+              </div>
+              <div id="profile2" class="usersprofile">
+                <img src="img/pfp/billboard_pfp.jpg" alt="" />
+                <div class="useridname">
+                  <span class="userid2">billboard</span>
+                  <span class="mutuality">Followed by spotify</span>
+                </div>
+                <span class="follow">Follow</span>
+              </div>
+              <div id="profile3" class="usersprofile">
+                <img src="img/pfp/billie_eilish_pfp.jpg" alt="" />
+                <div class="useridname">
+                  <span class="userid2">billieeilish</span>
+                  <span class="mutuality">Suggested for you</span>
+                </div>
+                <span class="follow">Follow</span>
+              </div>
+              <div id="profile4" class="usersprofile">
+                <img src="img/pfp/kfc_pfp.jpg" alt="" />
+                <div class="useridname">
+                  <span class="userid2">kfc</span>
+                  <span class="mutuality">Followed by tastemade</span>
+                </div>
+                <span class="follow">Follow</span>
+              </div>
+              <div id="profile5" class="usersprofile">
+                <img src="img/pfp/mcdonalds_in_pfp.jpg" alt="" />
+                <div class="useridname">
+                  <span class="userid2">mcdonalds_india</span>
+                  <span class="mutuality">Followed by mcdonalds</span>
+                </div>
+                <span class="follow">Follow</span>
+              </div>
+
+              <span class="copyright"> &copy; 2022 INSTAGRAM FROM META</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3rd post | OliviaR -->
+
+        <div class="posts">
+          <div class="postsheader">
+            <div class="postspfp">
+              <div class="tipcard">
+                <div class="theader">
+                  <div class="timage">
+                    <img src="img/pfp/oliviarodrigo_pfp.jpg" alt="" />
+                  </div>
+                  <div class="tprofiledetails">
+                    <span class="tuserid">
+                      oliviarodrigo
+                      <img
+                        class="verified"
+                        src="img/favicon/verified.png"
+                        alt=""
+                      />
+                    </span>
+                    <span class="tbio"> Singer & Musician </span>
+                    <span class="tmutuality">
+                      Followed by <span>billieeilish</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="profilestats">
+                  <div class="pstats">
+                    <span class="tcount"> 189 </span>
+                    <span class="ttext"> posts </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 27M </span>
+                    <span class="ttext"> followers </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 300 </span>
+                    <span class="ttext"> following </span>
+                  </div>
+                </div>
+                <div class="profileposts">
+                  <img
+                    class="pposts"
+                    src="img/posts/oliviarodrigo_post.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="pposts"
+                    src="img/posts/oliviarodrigo2_post.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="pposts"
+                    src="img/posts/oliviarodrigo3_post.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="tprofilefooter">
+                  <span> Message </span>
+                  <span> Following </span>
+                </div>
+              </div>
+              <div class="canvas-layer"></div>
+              <img
+                class="postspfpimg"
+                src="img/pfp/oliviarodrigo_pfp.jpg"
+                alt=""
+              />
+              <span class="postsuserid">oliviarodrigo</span>
+              <img class="verified" src="img/favicon/verified.png" alt="" />
+            </div>
+            <span id="vert" class="material-symbols-outlined"> more_vert </span>
+          </div>
+          <div class="postimage">
+            <img src="img/posts/oliviarodrigo_post.jpg" alt="" />
+          </div>
+          <div class="postsfooter">
+            <div class="actions">
+              <span id="aac" class="material-symbols-outlined factions">
+                favorite
+              </span>
+              <span id="bac" class="material-symbols-outlined factions">
+                maps_ugc
+                <div class="icon-layer"></div>
+              </span>
+              <span id="cac" class="material-symbols-outlined factions">
+                share
+              </span>
+              <span id="dac" class="material-symbols-sharp"> bookmark </span>
+            </div>
+            <span class="likes">10,500,345 likes</span>
+            <span class="postsdescrp"
+              ><span>oliviarodrigoto</span>dolls r dolling</span
+            >
+            <span class="commentscount">View all 510k comments</span>
+            <span class="posttime">3 DAYS AGO</span>
+            <div class="commentbox">
+              <span id="mood" class="material-symbols-outlined"> mood </span>
+              <input
+                class="writecomment"
+                type="text"
+                placeholder="Add a comment.."
+              />
+              <span class="postcomment">Post</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4th Post | Instagram -->
+
+        <div class="posts">
+          <div class="postsheader">
+            <div class="postspfp">
+              <div class="tipcard">
+                <div class="theader">
+                  <div class="timage">
+                    <img src="img/pfp/instagram_pfp.jpg" alt="" />
+                    <div class="tcanvas"></div>
+                  </div>
+                  <div class="tprofiledetails">
+                    <span class="tuserid">
+                      instagram
+                      <img
+                        class="verified"
+                        src="img/favicon/verified.png"
+                        alt=""
+                      />
+                    </span>
+                    <span class="tbio"> Corporation </span>
+                    <span class="tmutuality">
+                      Followed by <span>apple</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="profilestats">
+                  <div class="pstats">
+                    <span class="tcount"> 7,180 </span>
+                    <span class="ttext"> posts </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 530M </span>
+                    <span class="ttext"> followers </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 135 </span>
+                    <span class="ttext"> following </span>
+                  </div>
+                </div>
+                <div class="profileposts">
+                  <img
+                    class="pposts"
+                    src="img/posts/instagram_post.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="pposts"
+                    src="img/posts/instagram2_post.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="pposts"
+                    src="img/posts/instagram3_post.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="tprofilefooter">
+                  <span> Message </span>
+                  <span> Following </span>
+                </div>
+              </div>
+              <div class="canvas"></div>
+              <div class="canvas-layer"></div>
+              <img class="postspfpimg" src="img/pfp/instagram_pfp.jpg" alt="" />
+              <span class="postsuserid">instagram</span>
+              <img class="verified" src="img/favicon/verified.png" alt="" />
+            </div>
+            <span id="vert" class="material-symbols-outlined"> more_vert </span>
+          </div>
+          <div class="postimage">
+            <img src="img/posts/instagram_post.jpg" alt="" />
+          </div>
+          <div class="postsfooter">
+            <div class="actions">
+              <span id="aac" class="material-symbols-outlined factions">
+                favorite
+              </span>
+              <span id="bac" class="material-symbols-outlined factions">
+                maps_ugc
+                <div class="icon-layer"></div>
+              </span>
+              <span id="cac" class="material-symbols-outlined factions">
+                share
+              </span>
+              <span id="dac" class="material-symbols-sharp"> bookmark </span>
+            </div>
+            <span class="likes">900,160 likes</span>
+            <span class="postsdescrp"
+              ><span>instagram</span>She's something to be taken care of</span>
+            <span class="commentscount">View all 205 comments</span>
+            <span class="posttime">18 HOURS AGO</span>
+            <div class="commentbox">
+              <span id="mood" class="material-symbols-outlined"> mood </span>
+              <input
+                class="writecomment"
+                type="text"
+                placeholder="Add a comment.."
+              />
+              <span class="postcomment">Post</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="profileinfo-desktop" class="profileinfo">
+        <div class="suggestions-mobile">
+          <span>Suggestions for you</span>
+          <span>See All</span>
+        </div>
+        <div class="profileinfo-wrapper">
+          <div class="profileinfo-layer">
+            <div class="profilecard">
+              <img src="img/pfp/my_account_pfp.jpg" alt="" />
+              <div class="useridname">
+                <span class="userid">_akashwut</span>
+                <span class="name">akash</span>
+              </div>
+              <span class="switch">Switch</span>
+            </div>
+            <div class="suggestions-desktop">
+              <span>Suggestions for you</span>
+              <span>See All</span>
+            </div>
+            <div id="profile1" class="usersprofile">
+              <img src="img/pfp/tastemade_pfp.jpg" alt="" />
+              <div class="useridname">
+                <span class="userid2">tastemade</span>
+                <span class="mutuality">Suggested for you</span>
+              </div>
+              <span class="follow">Follow</span>
+            </div>
+            <div id="profile2" class="usersprofile">
+              <img src="img/pfp/billboard_pfp.jpg" alt="" />
+              <div class="useridname">
+                <span class="userid2">billboard</span>
+                <span class="mutuality">Followed by spotify</span>
+              </div>
+              <span class="follow">Follow</span>
+            </div>
+            <div id="profile3" class="usersprofile">
+              <img src="img/pfp/billie_eilish_pfp.jpg" alt="" />
+              <div class="useridname">
+                <span class="userid2">billieeilish</span>
+                <span class="mutuality">Suggested for you</span>
+              </div>
+              <span class="follow">Follow</span>
+            </div>
+            <div id="profile4" class="usersprofile">
+              <img src="img/pfp/kfc_pfp.jpg" alt="" />
+              <div class="useridname">
+                <span class="userid2">kfc</span>
+                <span class="mutuality">Followed by tastemade</span>
+              </div>
+              <span class="follow">Follow</span>
+            </div>
+            <div id="profile5" class="usersprofile">
+              <img src="img/pfp/mcdonalds_in_pfp.jpg" alt="" />
+              <div class="useridname">
+                <span class="userid2">mcdonalds_india</span>
+                <span class="mutuality">Followed by mcdonalds</span>
+              </div>
+              <span class="follow">Follow</span>
+            </div>
+
+            <span class="copyright"> &copy; 2022 INSTAGRAM FROM META</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="fhome" class="footnav">
+        <span class="material-symbols-outlined"> home </span>
+      </div>
+      <div id="fexplore" class="footnav">
+        <button class="material-symbols-outlined">explore</button>
+      </div>
+      <div id="fcreate" class="footnav">
+        <span class="material-symbols-outlined"> movie </span>
+      </div>
+      <div id="ffav" class="footnav">
+        <span class="material-symbols-outlined"> favorite </span>
+      </div>
+      <div id="fpfp" class="pfpfooter footnav">
+        <img src="img/pfp/my_account_pfp.jpg" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>

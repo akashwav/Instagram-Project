@@ -1,0 +1,1 @@
+alert("This website is a clone of Instagram made by Akash")
