@@ -32,6 +32,10 @@ img {
 	z-index: 5;
 }
 
+body {
+	min-width: 410px;
+}
+
 input::placeholder {
 	user-select: none;
 }
