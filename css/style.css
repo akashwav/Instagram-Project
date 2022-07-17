@@ -33,7 +33,7 @@ img {
 }
 
 body {
-	min-width: 410px;
+	min-width: 430px;
 }
 
 input::placeholder {
@@ -938,14 +938,6 @@ footer {
 	border-radius: 16px;
 }
 
-
-
-@media (max-width: 300px) {
-	.postspfp:hover .tipcard {
-		display: none;
-	}
-}
-
 @media (max-width: 750px) {
 	#fsimage {
                 padding-left: 8px;
@@ -1225,17 +1217,6 @@ footer {
 	}
 
 	.copyright {
-		display: none;
-	}
-
-}
-
-@media (max-width: 365px) {
-
-	.headersearch:focus-within+.searchpopup,
-	.headersearch:active+.searchpopup,
-	.searchbar:hover .searchpopup,
-	.searchpopup:hover {
 		display: none;
 	}
 
