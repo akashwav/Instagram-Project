@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta id="myViewport" name="viewport" content="width=device-width" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-        window.onload = function () {
-            if(window.innerWidth <= 400) {
-                var mvp = document.getElementById('myViewport');
-                mvp.setAttribute('content','width=400');
-            }
+      window.onload = function () {
+        if (window.innerWidth <= 400) {
+          var mvp = document.getElementById("myViewport");
+          mvp.setAttribute("content", "width = 400");
         }
-     </script>
+      };
+    </script>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -40,10 +41,10 @@
           expand_more
         </span>
       </div>
-      <div class="searchbar">
+      <div id="searchbar">
         <span id="search" class="material-symbols-outlined"> search </span>
-        <input class="headersearch" placeholder="Search" type="text" />
-        <div class="searchpopup">
+        <input id="searchheader" class="headersearch" placeholder="Search" type="text" />
+        <div id="popupsearch" class="searchpopup">
           <div class="searchpopup-layer">
             <div class="spheader">
               <span> Recent </span>
@@ -93,12 +94,12 @@
         </div>
       </div>
       <nav>
-        <button id="gnav" class="material-symbols-outlined navs">search</button>
         <button id="anav" class="material-symbols-outlined navs">home</button>
+        <button id="gnav" class="material-symbols-outlined navs">add</button>
         <button id="bnav" class="material-symbols-outlined navs">
           maps_ugc
           <div class="icon-layer"></div>
-          <span>9+</span>
+          <span id="notifcount">5</span>
         </button>
         <button id="cnav" class="material-symbols-outlined navs">
           add_circle
@@ -174,101 +175,7 @@
           </div>
         </div>
 
-        <!-- 1st Post | FCB -->
-
-        <div class="posts">
-          <div class="postsheader">
-            <div class="postspfp">
-              <div class="tipcard">
-                <div class="theader">
-                  <div class="timage">
-                    <img src="img/pfp/fcb_pfp.jpg" alt="" />
-                    <div class="tcanvas"></div>
-                  </div>
-                  <div class="tprofiledetails">
-                    <span class="tuserid">
-                      fcbarcelona
-                      <img
-                        class="verified"
-                        src="img/favicon/verified.png"
-                        alt=""
-                      />
-                    </span>
-                    <span class="tbio"> Sports Team </span>
-                    <span class="tmutuality">
-                      Followed by <span>apple</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="profilestats">
-                  <div class="pstats">
-                    <span class="tcount"> 16.7K </span>
-                    <span class="ttext"> posts </span>
-                  </div>
-                  <div class="pstats">
-                    <span class="tcount"> 110M </span>
-                    <span class="ttext"> followers </span>
-                  </div>
-                  <div class="pstats">
-                    <span class="tcount"> 78 </span>
-                    <span class="ttext"> following </span>
-                  </div>
-                </div>
-                <div class="profileposts">
-                  <img class="pposts" src="img/posts/fcb_post.jpg" alt="" />
-                  <img class="pposts" src="img/posts/fcb1_post.jpg" alt="" />
-                  <img class="pposts" src="img/posts/fcb2_post.jpg" alt="" />
-                </div>
-                <div class="tprofilefooter">
-                  <span> Message </span>
-                  <span> Following </span>
-                </div>
-              </div>
-              <div class="canvas"></div>
-              <div class="canvas-layer"></div>
-              <img class="postspfpimg" src="img/pfp/fcb_pfp.jpg" alt="" />
-              <span class="postsuserid">fcbarcelona</span>
-              <img class="verified" src="img/favicon/verified.png" alt="" />
-            </div>
-            <span id="vert" class="material-symbols-outlined"> more_vert </span>
-          </div>
-          <div class="postimage">
-            <img src="img/posts/fcb_post.jpg" alt="" />
-          </div>
-          <div class="postsfooter">
-            <div class="actions">
-              <span id="aac" class="material-symbols-outlined factions">
-                favorite
-              </span>
-              <span id="bac" class="material-symbols-outlined factions">
-                maps_ugc
-                <div class="icon-layer"></div>
-              </span>
-              <span id="cac" class="material-symbols-outlined factions">
-                share
-              </span>
-              <span id="dac" class="material-symbols-sharp"> bookmark </span>
-            </div>
-            <span class="likes">2,972,400 likes</span>
-            <span class="postsdescrp"
-              ><span>fcbarcelona</span>We out here NYC!<br />Spotify X
-              Barça</span
-            >
-            <span class="commentscount">View all 10k comments</span>
-            <span class="posttime">2 DAYS AGO</span>
-            <div class="commentbox">
-              <span id="mood" class="material-symbols-outlined"> mood </span>
-              <input
-                class="writecomment"
-                type="text"
-                placeholder="Add a comment.."
-              />
-              <span class="postcomment">Post</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2nd Post | Apple -->
+        <!-- 1st Post | Apple -->
 
         <div class="posts">
           <div class="postsheader">
@@ -324,14 +231,14 @@
               <span class="postsuserid">apple</span>
               <img class="verified" src="img/favicon/verified.png" alt="" />
             </div>
-            <span id="vert" class="material-symbols-outlined"> more_vert </span>
+            <span id="vert" class="material-symbols-outlined vert"> more_vert </span>
           </div>
-          <div class="postimage">
+          <div id="postimage" class="postimage">
             <img src="img/posts/apple_post.jpg" alt="" />
           </div>
           <div class="postsfooter">
             <div class="actions">
-              <span id="aac" class="material-symbols-outlined factions">
+              <span id="aac" class="material-symbols-outlined aac factions">
                 favorite
               </span>
               <span id="bac" class="material-symbols-outlined factions">
@@ -343,7 +250,7 @@
               </span>
               <span id="dac" class="material-symbols-sharp"> bookmark </span>
             </div>
-            <span class="likes">3,000,230 likes</span>
+            <span class="likes"><span id="likescount">3,000,230</span> likes</span>
             <span class="postsdescrp"
               ><span>apple</span>Great Shots are worth waiting for...<br />iphone
               13 pro night photography!!!</span
@@ -362,10 +269,104 @@
           </div>
         </div>
 
+        <!-- 2nd Post | FCB -->
+
+        <div class="posts">
+          <div class="postsheader">
+            <div class="postspfp">
+              <div class="tipcard">
+                <div class="theader">
+                  <div class="timage">
+                    <img src="img/pfp/fcb_pfp.jpg" alt="" />
+                    <div class="tcanvas"></div>
+                  </div>
+                  <div class="tprofiledetails">
+                    <span class="tuserid">
+                      fcbarcelona
+                      <img
+                        class="verified"
+                        src="img/favicon/verified.png"
+                        alt=""
+                      />
+                    </span>
+                    <span class="tbio"> Sports Team </span>
+                    <span class="tmutuality">
+                      Followed by <span>apple</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="profilestats">
+                  <div class="pstats">
+                    <span class="tcount"> 16.7K </span>
+                    <span class="ttext"> posts </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 110M </span>
+                    <span class="ttext"> followers </span>
+                  </div>
+                  <div class="pstats">
+                    <span class="tcount"> 78 </span>
+                    <span class="ttext"> following </span>
+                  </div>
+                </div>
+                <div class="profileposts">
+                  <img class="pposts" src="img/posts/fcb_post.jpg" alt="" />
+                  <img class="pposts" src="img/posts/fcb1_post.jpg" alt="" />
+                  <img class="pposts" src="img/posts/fcb2_post.jpg" alt="" />
+                </div>
+                <div class="tprofilefooter">
+                  <span> Message </span>
+                  <span> Following </span>
+                </div>
+              </div>
+              <div class="canvas"></div>
+              <div class="canvas-layer"></div>
+              <img class="postspfpimg" src="img/pfp/fcb_pfp.jpg" alt="" />
+              <span class="postsuserid">fcbarcelona</span>
+              <img class="verified" src="img/favicon/verified.png" alt="" />
+            </div>
+            <span id="vert" class="material-symbols-outlined vert"> more_vert </span>
+          </div>
+          <div id="postimage" class="postimage">
+            <img src="img/posts/fcb_post.jpg" alt="" />
+          </div>
+          <div class="postsfooter">
+            <div class="actions">
+              <span id="aac" class="material-symbols-outlined aac factions">
+                favorite
+              </span>
+              <span id="bac" class="material-symbols-outlined factions">
+                maps_ugc
+                <div class="icon-layer"></div>
+              </span>
+              <span id="cac" class="material-symbols-outlined factions">
+                share
+              </span>
+              <span id="dac" class="material-symbols-sharp"> bookmark </span>
+            </div>
+            <span class="likes"><span id="likescount">2,972,400</span> likes</span>
+            <span class="postsdescrp"
+              ><span>fcbarcelona</span>We out here NYC!<br />Spotify X
+              Barça</span
+            >
+            <span class="commentscount">View all 10k comments</span>
+            <span class="posttime">2 DAYS AGO</span>
+            <div class="commentbox">
+              <span id="mood" class="material-symbols-outlined"> mood </span>
+              <input
+                class="writecomment"
+                type="text"
+                placeholder="Add a comment.."
+              />
+              <span class="postcomment">Post</span>
+            </div>
+          </div>
+        </div>
+
         <!-- Suggestions -->
 
         <section id="profileinfo-mobile" class="profileinfo">
-          <div class="suggestions-mobile">
+          <div id="suggestions-mobile">
             <span>Suggestions for you</span>
             <span>See All</span>
           </div>
@@ -491,14 +492,14 @@
               <span class="postsuserid">oliviarodrigo</span>
               <img class="verified" src="img/favicon/verified.png" alt="" />
             </div>
-            <span id="vert" class="material-symbols-outlined"> more_vert </span>
+            <span id="vert" class="material-symbols-outlined vert"> more_vert </span>
           </div>
           <div class="postimage">
             <img src="img/posts/oliviarodrigo_post.jpg" alt="" />
           </div>
           <div class="postsfooter">
             <div class="actions">
-              <span id="aac" class="material-symbols-outlined factions">
+              <span id="aac" class="material-symbols-outlined aac factions">
                 favorite
               </span>
               <span id="bac" class="material-symbols-outlined factions">
@@ -596,14 +597,14 @@
               <span class="postsuserid">instagram</span>
               <img class="verified" src="img/favicon/verified.png" alt="" />
             </div>
-            <span id="vert" class="material-symbols-outlined"> more_vert </span>
+            <span id="vert" class="material-symbols-outlined vert"> more_vert </span>
           </div>
           <div class="postimage">
             <img src="img/posts/instagram_post.jpg" alt="" />
           </div>
           <div class="postsfooter">
             <div class="actions">
-              <span id="aac" class="material-symbols-outlined factions">
+              <span id="aac" class="material-symbols-outlined aac factions">
                 favorite
               </span>
               <span id="bac" class="material-symbols-outlined factions">
@@ -617,7 +618,8 @@
             </div>
             <span class="likes">900,160 likes</span>
             <span class="postsdescrp"
-              ><span>instagram</span>She's something to be taken care of</span>
+              ><span>instagram</span>She's something to be taken care of</span
+            >
             <span class="commentscount">View all 205 comments</span>
             <span class="posttime">18 HOURS AGO</span>
             <div class="commentbox">
@@ -634,7 +636,7 @@
       </section>
 
       <section id="profileinfo-desktop" class="profileinfo">
-        <div class="suggestions-mobile">
+        <div id="suggestions-mobile">
           <span>Suggestions for you</span>
           <span>See All</span>
         </div>
@@ -715,5 +717,6 @@
         <img src="img/pfp/my_account_pfp.jpg" alt="" />
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
